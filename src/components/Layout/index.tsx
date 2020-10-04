@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import MainHeader from '../MainHeader';
 import Aside from '../Aside';

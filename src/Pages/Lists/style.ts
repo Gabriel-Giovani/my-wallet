@@ -26,6 +26,7 @@ export const Filters = styled.div`
         color: ${props => props.theme.colors.white};
         margin: 0 10px;
         transition: .3s ease;
+        opacity: .4;
 
         &:hover{
             opacity: .7;
@@ -49,6 +50,10 @@ export const Filters = styled.div`
         &::after{
             border-bottom: 10px solid ${props => props.theme.colors.warning};
         }
+    }
+
+    .tag-actived{
+        opacity: 1;
     }
 
 `;
