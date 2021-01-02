@@ -1,12 +1,13 @@
 import React from 'react';
-
 import LogoImg from '../../assets/logo.svg';
-import { Container, Header, Logo, MenuContainer, MenuItemLink, Title } from './style';
+import { Container, Header, Logo, MenuContainer, MenuItemLink, MenuItemButton, Title } from './style';
 import { MdDashboard, MdArrowDownward, MdArrowUpward, MdExitToApp } from 'react-icons/md';
+import { useAuth } from '../../hooks/auth';
 
 const Aside: React.FC = () => {
-    return(
+    const { signOut } = useAuth();
 
+    return(
         <Container>
             <Header>
                 <Logo src={ LogoImg } alt="Logo Minha Carteira" />
@@ -29,13 +30,12 @@ const Aside: React.FC = () => {
                     Saídas
                 </MenuItemLink>
 
-                <MenuItemLink href="">
+                <MenuItemButton onClick={signOut}>
                     <MdExitToApp />
                     Sair
-                </MenuItemLink>
+                </MenuItemButton>
             </MenuContainer>
         </Container>
-
     );
 }
 

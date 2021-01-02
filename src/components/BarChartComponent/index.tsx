@@ -15,7 +15,6 @@ interface IBarChartProps{
 }
 
 const BarCharComponent: React.FC<IBarChartProps> = ({ title, data }) => {
-    console.log(data);
     return(
 
         <Container>
