@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import ToogleComponent from '../Toogle';
+
 export const Container = styled.div`
 
     grid-area: MH;

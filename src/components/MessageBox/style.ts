@@ -22,4 +22,36 @@ export const Container = styled.div`
         font-size: 18px;
     }
 
+    @media(max-width: 769px){
+        width: 100%;
+
+        > header{
+
+            > h1{
+                font-size: 24px;
+            }
+
+            > img{
+                height: 20px;
+                width: 20px;
+            }
+
+            > p, > footer span{
+                font-size: 14px;
+            }
+        }
+
+    }
+
+    @media(max-width: 419px){
+        width: 100%;
+        height: auto;
+
+        > header{
+            > p{
+                margin-bottom: 15px;
+            }
+        }
+    }
+
 `;

@@ -1,5 +1,4 @@
 import React, { useMemo, useState } from 'react';
-
 import Toogle from '../Toogle';
 import emojis from '../../utils/emojis';
 import { Container, Profile, Welcome, UserName } from './style';
